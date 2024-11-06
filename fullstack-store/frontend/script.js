@@ -2,7 +2,7 @@ const productListElement = document.getElementById('product-list');
 
 // Получаем данные о продуктах с сервера
 async function fetchProducts() {
-  const response = await fetch('https://backend-deploy-uu0g.onrender.com/api/products');
+  const response = await fetch('https://backend-deploy-uu0g.onrender.com/10000/api/products');
   const products = await response.json();
 
   products.forEach(product => {
